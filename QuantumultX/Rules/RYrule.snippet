@@ -1,0 +1,25 @@
+# 分流规则配置片段包含若干条分流规则；可通过资源引用的方式使用。
+# 片段文件将保存在 Quantumult X 目录下的 Profiles 子目录中。
+# 样例可参见 https://raw.githubusercontent.com/crossutility/Quantumult-X/master/filter.snippet
+# IP
+geoip, tw, TW
+geoip, us, US
+host-suffix, tw, TW 
+# 流媒体
+host-suffix, baidu.com, direct
+host-suffix, bilibili.com, direct
+host-suffix, netflix.com, Netflix
+host-suffix, mangacopy.com, Amytelecom
+# 玉山证券
+host-suffix, esunsec.com.tw, ESUN
+# 学术类
+host-suffix, writeandimprove.com, direct
+host-keyword, bookey, direct
+host-keyword, welink, direct
+host-suffix, cnki.net, direct
+host-suffix, ieee.org, direct
+host-suffix, clarivate.com, direct
+# Special
+host-suffix, gov.tw, direct
+host-suffix, ris.gov.tw, US
+;host, www.example.com, direct
